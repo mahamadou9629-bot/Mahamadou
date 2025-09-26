@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Menu responsive</title>
+    <title>DemTech portfolio</title>
 </head>
 <body>
     <!DOCTYPE html>
@@ -20,7 +20,7 @@
   <!-- Navbar -->
   <header>
     <nav class="navbar">
-      <div class="logo">Mahamadou</div>
+      <div class="logo">DemTech</div>
       <ul class="nav-links">
         <li><a href="#about">À propos</a></li>
         <li><a href="#skills">Compétences</a></li>
@@ -40,30 +40,46 @@
 
   <!-- À propos -->
   <section id="about" class="section">
-    <h2>À propos</h2>
-    <p>
-      Je suis un développeur web autodidacte, passionné par la création de sites modernes
-      et fonctionnels. J’apprends étape par étape pour devenir un expert en développement web.
-    </p>
+    <div class="about-info">
+      <div class="about-text">
+        <p>
+          Je suis un développeur web autodidacte, passionné par la création de sites modernes et fonctionnels. J’apprends étape par étape pour devenir un expert en développement web.
+        </p>
+      </div>
+      
+      <div about-img>
+        <img src="emile-perron-xrVDYZRGdw4-unsplash.jpg" alt="">
+      </div>
+    </div>
   </section>
 
   <!-- Compétences -->
-  <section id="skills" class="section">
+  <section id="skills" class="section-skills">
     <h2>Compétences</h2>
     <div class="skills-grid">
-      <div class="skill">HTML</div>
-      <div class="skill">CSS</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">Python</div>
-      <div class="skill">Tailwind</div>
       <div class="skill">
-        <div>Outils</div>
-        <div>Vs Code</div>
-        <div>Git & GitHub</div>
-        <div>canvas</div>
-        di
+        <i class="fa-brands fa-html5"></i>
+        <p>HTML</p>
       </div>
-      <div class="skill">React (en apprentissage)</div>
+      <div class="skill">
+        <i class="fa-brands fa-css3"></i>
+        <p>CSS</p>
+      </div>
+      <div class="skill">
+        <i></i>
+        <p>JavaScript</p>
+      </div>
+      <div class="skill">
+        <i></i>
+        <p>Tailwind</p>
+      </div> 
+      <div class="skill">
+        <p>React</p>
+      </div>
+    </div>
+    <div class="skill">
+      <i class="fa-brands fa-github"></i>
+      <p>Git & Github</p>
     </div>
   </section>
 
@@ -100,14 +116,15 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>📞 73 01 01 29</p>
-    <p>📧 ton.email@example.com</p>
-    <div class="socials">
-      <a href="#">Twitter</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">GitHub</a>
+  <section id="contact" class="contact">
+    <h2>Contactez-moi</h2>
+    <div class="contact-card">
+      <form>
+        <input type="text" placeholder="Votre nom" required>
+        <input type="email" placeholder="Votre email" required>
+        <textarea rows="5" placeholder="Votre message" required></textarea>
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
     </div>
   </section>
 
